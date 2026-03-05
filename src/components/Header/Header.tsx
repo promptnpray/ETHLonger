@@ -5,7 +5,6 @@ import './Header.css';
 
 export function Header() {
   const balance = useGameStore(state => state.balance);
-  const positions = useGameStore(state => state.positions);
   const gameOver = useGameStore(state => state.gameOver);
   const resetGame = useGameStore(state => state.resetGame);
   
