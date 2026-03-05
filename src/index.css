@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'VT323', monospace;
+  line-height: 1.2;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #39ff14;
+  background-color: #0a0a0a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  image-rendering: pixelated;
+  font-size: 18px;
+}
+
+body {
+  zoom: 1.5;
+}
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #252525;
+  --text-primary: #39ff14;
+  --text-secondary: #00ff00;
+  --text-dim: #008800;
+  --accent-green: #39ff14;
+  --accent-red: #ff0040;
+  --border-color: #39ff14;
+  --border-dim: #004400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  height: calc(100vh / 1.5);
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+#root {
+  height: calc(100vh / 1.5);
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'VT323', monospace;
+  cursor: pointer;
+}
+
+input {
+  font-family: 'VT323', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-dim);
+  border: 1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-color);
+}
+
+::selection {
+  background: var(--accent-green);
+  color: var(--bg-primary);
+}
