@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# ETHLonger 📈
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **ETHLonger**, a humorous and highly speculative trading simulator directly inspired by the legendary (@MachiBigBrother) and his unending quest to long Ethereum.
 
-Currently, two official plugins are available:
+## The Story
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Some people trade both ways. Some people hedge their bets. But true gigabrains? They just keep pressing the "LONG ETH" button. 
 
-## React Compiler
+ETHLonger lets you experience the thrill (and occasional liquidation) of being relentlessly bullish on Ethereum, no matter what the charts say. Can you handle the volatility? Can you out-long Machi? 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Long Only Trading**: Who needs a short button anyway?
+- **Real-time Price Simulation**: Watch the market move and your PnL swing.
+- **Max Leverage**: Because true believers don't spot trade.
+- **Liquidation Engine**: Face the consequences of the market turning against your iron conviction.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- Zustand (State Management)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## How to Play
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Start with a fantasy balance.
+2. Select your leverage.
+3. Mash the **LONG** button.
+4. Pray to the crypto gods.
+5. Watch your PnL go to the moon, or get completely rekt.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Disclaimer: This is a meme project and a game. Not financial advice. Always DYOR and maybe don't actually 100x long ETH with your life savings.*
